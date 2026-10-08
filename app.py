@@ -125,7 +125,7 @@ def get_file_extension(filename: str) -> str:
     """
     if "." not in filename:
         # BUG: Returns original filename instead of empty string
-        return filename
+        return ""
     return filename.split(".")[-1]
 
 
