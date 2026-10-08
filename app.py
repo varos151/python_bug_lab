@@ -28,9 +28,9 @@ def clamp_number(value: float, min_val: float, max_val: float) -> float:
     """
     # BUG: Inverted boundary checks
     if value < min_val:
-        return max_val
-    elif value > max_val:
         return min_val
+    elif value > max_val:
+        return max_val
     return value
 
 
