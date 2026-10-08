@@ -140,7 +140,7 @@ def get_top_students(grades: list, n: int) -> list:
     Expected: get_top_students(["Alice", "Bob", "Charlie", "David"], 2) -> ["Alice", "Bob"]
     """
     # BUG: Slices up to n-1 instead of n
-    return grades[: n - 1]
+    return grades[: n]
 
 
 def remove_duplicates_preserve_order(items: list) -> list:
