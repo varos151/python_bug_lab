@@ -80,7 +80,7 @@ def is_palindrome(text: str) -> bool:
     Expected: Case-insensitive check (e.g. "Racecar" -> True).
     """
     # BUG: Compares without lowercasing
-    cleaned = text.replace(" ", "")
+    cleaned = text.replace(" ", "").lower()
     return cleaned == cleaned[::-1]
 
 
