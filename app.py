@@ -42,7 +42,7 @@ def discount_price(price: float, discount_percent: float) -> float:
     """
     # BUG: Computes discount amount, forgets to subtract from price
     discount_amount = price * (discount_percent / 100.0)
-    return discount_amount
+    return price - discount_amount
 
 
 def find_max_number(numbers: list) -> int:
