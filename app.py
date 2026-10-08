@@ -91,7 +91,7 @@ def count_vowels(text: str) -> int:
     Expected: count_vowels("umbrella") -> 3
     """
     # BUG: Missing 'u' in vowels
-    vowels = "aeioAEIO"
+    vowels = "aeiouAEIOU"
     return sum(1 for char in text if char in vowels)
 
 
