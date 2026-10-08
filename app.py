@@ -17,7 +17,7 @@ def is_even(n: int) -> bool:
     Expected: is_even(4) -> True, is_even(7) -> False, is_even(-2) -> True.
     """
     # BUG: Checks for 1 instead of 0
-    return n % 2 == 1
+    return n % 2 == 0
 
 
 def clamp_number(value: float, min_val: float, max_val: float) -> float:
